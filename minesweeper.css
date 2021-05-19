@@ -1,0 +1,64 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/images/bg1.png');
+}
+
+.game-ctr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+}
+
+.game-ctr > .header{
+    display: flex;
+    flex: row;
+    padding-bottom: 2rem;
+    font-size: 20px;
+}
+
+.game-ctr > .header > .time-ctr{
+    padding-left: 2rem;
+}
+
+.game-ctr > .grid-ctr{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.0625rem solid sandybrown;
+}
+
+.game-ctr > .grid-ctr > .box{
+    border: 0.0625rem solid sandybrown;
+    box-sizing: border-box;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.25rem;
+}
+
+.game-ctr > .grid-ctr > .box.bomb.clicked{
+    background-image: url('images/bomb.png');
+    background-size: cover;
+}
+
+.game-ctr > .grid-ctr > .box.empty.clicked{
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    background-color: azure;
+}
+
+
+.game-ctr > .grid-ctr > .box.flag{
+    background-image: url('images/flag.png');
+    background-size: cover;
+}
+
+.game-ctr > .result-ctr{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
